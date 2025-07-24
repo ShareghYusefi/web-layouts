@@ -27,9 +27,51 @@
         background-color: lightcyan;
         border: 1px solid black;
       }
+
+      .relative {
+        position: relative;
+        width: 500px;
+        height: 350px;
+        background-color: lightgray;
+        border: 1px solid black;
+      }
+
+      .relative-position {
+        position: relative;
+        bottom: 15px;
+        background-color: lightgreen;
+        border: 1px solid black;
+      }
+
+      .absolute-position {
+        position: absolute;
+        top: 100px;
+        left: 25px;
+        width: 150px;
+        height: 110px;
+        background-color: lightcoral;
+        border: 1px solid black;
+      }
+
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+      }
+      div.sticky {
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
     </style>
   </head>
   <body>
+    <div class="sticky">I am sticky!</div>
+
     <h1>Web Layout</h1>
     <p>
       Traditional flow of HTML elements are to be stacked on top of each other.
@@ -52,5 +94,22 @@
         >maintain their size and shape like block elements.</span
       >
     </p>
+
+    <p>
+      Float css property can be used to move inline elements to the left or
+      right on the page and allow text to wrap around it.
+    </p>
+
+    <div class="relative">
+      The <span class="relative-position">position property</span> specifies the
+      type of positioning method used for an element. hic tempore obcaecati
+      excepturi enim vero quia alias pariatur, a provident, veritatis
+      praesentium dignissimos dicta?
+      <div class="absolute-position">
+        This is the absolute div. It is positioned relative to the nearest
+        parent element that has a position property value of relative.
+      </div>
+    </div>
+    <div class="fixed">This div element has position: fixed;</div>
   </body>
 </html>
