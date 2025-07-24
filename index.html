@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Layout</title>
+    <style>
+      .block {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+      .inline {
+        display: inline;
+        width: 3000px;
+        background-color: lightcoral;
+        border: 1px solid black;
+      }
+
+      .inline-block {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background-color: lightcyan;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Layout</h1>
+    <p>
+      Traditional flow of HTML elements are to be stacked on top of each other.
+      <span class="block"
+        ><strong>Block</strong> elements start on a new line and take up the
+        full width available</span
+      >
+    </p>
+    <p>
+      <strong>Inline</strong> elements are those that start on a new line and
+      only take up as much width as necessary. <br />
+      <span class="inline">Span tags</span> are also inline elements which do
+      not take up any width or height value.
+    </p>
+
+    <p>
+      <strong>Inline-block</strong> elements that flow with the text and do NOT
+      start on a new line. They also
+      <span class="inline-block"
+        >maintain their size and shape like block elements.</span
+      >
+    </p>
+  </body>
+</html>
